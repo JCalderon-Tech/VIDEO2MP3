@@ -1,0 +1,7 @@
+# Motor de descarga: único punto de dependencia del sistema.
+# Mantener SIEMPRE al día: cada release corrige extractores (403) y parches de
+# seguridad (CVE). Fijado al floor de la versión que corrige CVE-2026-50574,
+# CVE-2026-50019 y CVE-2026-55404.
+yt-dlp>=2026.7.4
+# Capa gráfica: PySide6 (Qt 6). Requiere Python 3.11+.
+PySide6>=6.11

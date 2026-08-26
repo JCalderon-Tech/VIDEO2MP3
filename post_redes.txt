@@ -1,0 +1,52 @@
+========================================
+  VIDEO2MP3 — Post para Redes Sociales
+========================================
+
+--- POST (adaptar según plataforma) ---
+
+¿Tienes un video y solo necesitas el audio? 🎵
+
+Video2MP3 es una aplicación de escritorio que descarga y convierte
+videos a MP3 en segundos. Sin complicaciones, sin configuración
+técnica, sin_qualitys sospechosas.
+
+▶ ¿Qué hace?
+  • Pega la URL de YouTube (o +1000 sitios soportados)
+  • Selecciona tu calidad preferida (hasta 320 kbps)
+  • Haz clic en Descargar
+  • Tu MP3 está listo con portada y metadatos integrados
+
+✦ Características principales:
+  • Cola de descargas múltiples
+  • Cancela o reintenta sin perder progreso
+  • Tema claro y oscuro
+  • Configurable: ruta de ffmpeg, carpeta de salida, bitrate
+  • Código abierto — GPLv3
+
+Hecho con Python, PySide6, yt-dlp y ffmpeg.
+
+🔗 [enlace al repositorio]
+
+#Video2MP3 #OpenSource #Python #FFmpeg #AudioConverter
+
+
+--- DESCRIPCIÓN BREVE DEL PROYECTO ---
+
+Video2MP3 es una aplicación de escritorio open source construida
+con Python 3.11+, PySide6 (Qt 6), yt-dlp y ffmpeg.
+
+Permite descargar videos desde más de 1000 sitios web y extraer
+su audio en formato MP3 con calidad configurable hasta 320 kbps.
+
+La interfaz gráfica ofrece una cola de descargas en tiempo real
+con estados visuales (pendiente, descargando, completado, error),
+opciones de cancelar y reintroducir elementos, y persiste la
+configuración del usuario (carpeta de salida, bitrate, tema,
+ruta de ffmpeg) entre sesiones.
+
+El proyecto es completely local: no hay servidores, no hay
+telemetría, no hay dependencias ocultas. Todo el procesamiento
+ocurre en la máquina del usuario.
+
+Licencia: GPLv3
+Stack: Python 3.11+ · PySide6 · yt-dlp · ffmpeg
