@@ -8,10 +8,6 @@ Descarga y convierte videos a MP3 desde más de 1000 sitios web.
 
 ## Demo
 
-```bash
-python video2mp3.py
-```
-
 ![Interfaz de Video2MP3](assets/screenshot.png)
 
 ## Qué hace
@@ -28,26 +24,31 @@ en formato MP3 con calidad configurable (hasta 320 kbps). Motor de descarga:
 
 ### Requisitos
 
-- **Python 3.11+`
+- **Python 3.11+**
 - **ffmpeg** en PATH del sistema:
   - Windows: `winget install ffmpeg`
   - Linux: `sudo apt install ffmpeg`
   - macOS: `brew install ffmpeg`
 
-### Pasos
+### Desde código fuente
 
 ```bash
-git clone https://github.com/tu-usuario/video2mp3.git
-cd video2mp3
+git clone https://github.com/JCalderon-Tech/VIDEO2MP3.git
+cd VIDEO2MP3
 pip install -r requirements.txt
 python video2mp3.py
 ```
+
+### Ejecutable (sin Python)
+
+Descarga `Video2MP3.exe` desde la sección Releases. Solo necesitas
+ffmpeg instalado en el equipo (ver requisitos arriba).
 
 ## Uso
 
 1. Pega una URL y presiona **Añadir** (o Enter) — repite para varias URLs,
    o usa **Importar URLs...** para cargar desde un archivo de texto.
-2. Opcional: cambia la carpeta destino (por defecto `~/Descargas_MP3`).
+2. Opcional: cambia la carpeta destino (por defecto `~/Downloads/Video2MP3`).
 3. Presiona **▶ Iniciar descarga**. La cola se procesa secuencialmente.
 4. Los MP3 quedan en la carpeta destino con nombre, etiquetas ID3 y carátula.
 
@@ -65,6 +66,7 @@ python video2mp3.py
 | Configuración persistente | Carpeta, bitrate, ffmpeg, tema y geometría se guardan |
 | Actualizar yt-dlp | Desde la app, para mantenerse al día contra 403/CVEs |
 | Timeout de red | 30 s para que una conexión colgada no bloquee la cola |
+| Cross-platform | Windows, Linux, macOS — rutas adaptativas |
 
 ## Atajos de teclado
 
@@ -95,6 +97,14 @@ video2mp3.py
 - Comunicación worker → UI: callbacks + `log_queue` (cola thread-safe)
   con refresco por `QTimer` cada 400 ms.
 
+## Compilar a ejecutable
+
+```bash
+pip install pyinstaller
+pyinstaller video2mp3.spec --noconfirm
+# Resultado: dist/Video2MP3.exe
+```
+
 ## Desarrollo
 
 ```bash
@@ -106,7 +116,7 @@ python -m ruff check video2mp3.py
 # Typecheck
 python -m mypy video2mp3.py
 
-# Compilar sin GUI (verificación)
+# Verificar compilación
 python -m py_compile video2mp3.py
 ```
 
@@ -119,8 +129,5 @@ Creado por **Nexus_Calderon** con HyperFrames.
 
 ## Licencia
 
- GPLv3 — ver [LICENSE](LICENSE) para detalles.
-
-Usa esta herramienta solo para contenido que tengas derecho a descargar
-(tuyo, de dominio público, o con licencia que lo permita). Respeta los
-términos de servicio de la plataforma de origen.
+GPLv3 — uso libre. Respeta los términos de servicio de las plataformas
+de origen al descargar contenido.
