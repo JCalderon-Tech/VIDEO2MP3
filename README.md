@@ -8,7 +8,7 @@ Descarga y convierte videos a MP3 desde más de 1000 sitios web.
 
 ## Demo
 
-![Interfaz de Video2MP3](assets/screenshot.png)
+![Interfaz de Video2MP3](assets/Screenshot.png)
 
 ## Qué hace
 
