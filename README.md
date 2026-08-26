@@ -125,9 +125,6 @@ python -m py_compile video2mp3.py
 Se incluye `video.mp4` con un tutorial de 51 segundos que cubre:
 pegar URL, descargar, configurar calidad y obtener el archivo final.
 
-Creado por **Nexus_Calderon** con HyperFrames.
+Creado por **Nexus_Calderon**.
 
-## Licencia
 
-GPLv3 — uso libre. Respeta los términos de servicio de las plataformas
-de origen al descargar contenido.
